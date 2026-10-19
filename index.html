@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fʀᴇᴇ Fɪʀᴇ Aᴜᴛᴏ Lɪᴋᴇs — 6 Tɪᴇʀs: Bʀᴏɴᴢᴇ, Sɪʟᴠᴇʀ, Gᴏʟᴅ, Pʟᴀᴛɪɴᴜᴍ, Dɪᴀᴍᴏɴᴅ & Mᴀsᴛᴇʀ.">
+<title>🔥 Fʀᴇᴇ Fɪʀᴇ Aᴜᴛᴏ Lɪᴋᴇs | Dɢ Sᴛᴏʀᴇ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#07070b;
+  --text:#f6f6f8;
+  --muted:#8f8fa3;
+  --line:rgba(255,255,255,.09);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'Outfit',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  overflow-x:hidden;
+  position:relative;
+  padding-bottom:90px;
+}
+
+/* ─── Animated background ─── */
+body::before{
+  content:'';
+  position:fixed;
+  inset:-25%;
+  z-index:-2;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(255,106,0,.22), transparent 42%),
+    radial-gradient(circle at 82% 22%, rgba(255,45,85,.18), transparent 42%),
+    radial-gradient(circle at 50% 92%, rgba(124,58,237,.20), transparent 48%);
+  animation:drift 20s ease-in-out infinite alternate;
+}
+body::after{
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background-image:
+    linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px);
+  background-size:52px 52px;
+  mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 78%);
+  -webkit-mask-image:radial-gradient(circle at 50% 30%, #000 0%, transparent 78%);
+}
+@keyframes drift{
+  0%{transform:translate3d(0,0,0) scale(1)}
+  100%{transform:translate3d(0,-4%,0) scale(1.08)}
+}
+
+/* ─── Layout ─── */
+.wrap{
+  width:100%;
+  max-width:1080px;
+  margin:0 auto;
+  padding:0 18px;
+}
+
+/* ─── Hero ─── */
+header{
+  padding:52px 0 10px;
+  text-align:center;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 18px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  color:#ffd9b8;
+  background:rgba(255,106,0,.10);
+  border:1px solid rgba(255,106,0,.35);
+  box-shadow:0 0 30px -8px rgba(255,106,0,.6);
+  margin-bottom:22px;
+}
+.badge .dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#22e06a;
+  box-shadow:0 0 10px #22e06a;
+  animation:pulse 1.6s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.35;transform:scale(.75)}
+}
+
+h1{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(28px,6.5vw,52px);
+  font-weight:900;
+  line-height:1.12;
+  letter-spacing:-.5px;
+  background:linear-gradient(100deg,#fff 10%,#ffb066 45%,#ff5a1f 70%,#fff 100%);
+  background-size:220% auto;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  animation:shine 7s linear infinite;
+}
+@keyframes shine{
+  to{background-position:220% center}
+}
+
+.sub{
+  margin-top:14px;
+  color:var(--muted);
+  font-size:clamp(14px,3.4vw,17px);
+  font-weight:400;
+  letter-spacing:.2px;
+}
+
+/* ─── Feature strip ─── */
+.features{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin:30px 0 8px;
+}
+.feat{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:11px 18px;
+  border-radius:14px;
+  font-size:13.5px;
+  font-weight:600;
+  color:#e7e7ef;
+  background:rgba(255,255,255,.035);
+  border:1px solid var(--line);
+  backdrop-filter:blur(10px);
+  transition:.3s;
+}
+.feat:hover{
+  border-color:rgba(255,106,0,.5);
+  background:rgba(255,106,0,.07);
+  transform:translateY(-2px);
+}
+.feat span{font-size:15px}
+
+/* ─── Divider ─── */
+.divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:46px 0 32px;
+  color:rgba(255,255,255,.28);
+  font-size:13px;
+  letter-spacing:3px;
+}
+.divider::before,
+.divider::after{
+  content:'';
+  height:1px;
+  flex:1;
+  max-width:170px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.22),transparent);
+}
+
+.section-title{
+  text-align:center;
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(19px,4.4vw,26px);
+  font-weight:700;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+.section-title em{
+  font-style:normal;
+  background:linear-gradient(90deg,#ff9a3c,#ff3d00);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.section-note{
+  text-align:center;
+  color:var(--muted);
+  font-size:13.5px;
+  margin-bottom:30px;
+}
+
+/* ─── Quick tier nav ─── */
+.tier-nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+  margin-bottom:34px;
+}
+.tier-nav a{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:9px 15px;
+  border-radius:12px;
+  font-size:12.5px;
+  font-weight:700;
+  text-decoration:none;
+  color:#e7e7ef;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  transition:.28s;
+  letter-spacing:.3px;
+}
+.tier-nav a:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.08);
+  border-color:color-mix(in srgb, var(--tc) 55%, transparent);
+  color:#fff;
+  box-shadow:0 12px 26px -14px var(--tc);
+}
+
+/* ══════════════════════════════════════════
+   TIER SECTIONS
+   ══════════════════════════════════════════ */
+.tier{
+  margin-bottom:44px;
+  scroll-margin-top:20px;
+}
+
+.tier-head{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:18px 22px;
+  border-radius:18px;
+  margin-bottom:22px;
+  background:linear-gradient(135deg,
+    color-mix(in srgb, var(--tier) 18%, transparent),
+    transparent 70%);
+  border:1px solid color-mix(in srgb, var(--tier) 45%, transparent);
+  box-shadow:0 18px 50px -28px var(--tier);
+  position:relative;
+  overflow:hidden;
+}
+.tier-head::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 0% 50%, color-mix(in srgb, var(--tier) 28%, transparent), transparent 45%);
+  pointer-events:none;
+}
+
+.tier-icon{
+  width:56px;height:56px;
+  flex-shrink:0;
+  display:grid;place-items:center;
+  border-radius:16px;
+  font-size:26px;
+  background:linear-gradient(135deg,
+    color-mix(in srgb, var(--tier) 55%, #000),
+    color-mix(in srgb, var(--tier) 90%, #fff));
+  box-shadow:0 14px 30px -12px var(--tier),
+             inset 0 1px 0 rgba(255,255,255,.28);
+  position:relative;
+  z-index:1;
+}
+.tier-icon::before{
+  content:'';
+  position:absolute;
+  inset:3px;
+  border-radius:13px;
+  background:linear-gradient(180deg, rgba(255,255,255,.22), transparent 55%);
+  pointer-events:none;
+}
+
+.tier-info{position:relative;z-index:1;flex:1}
+.tier-name{
+  font-family:'Orbitron',sans-serif;
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:1px;
+  line-height:1.1;
+  background:linear-gradient(90deg,#fff,var(--tier));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.tier-desc{
+  font-size:12.5px;
+  color:var(--muted);
+  margin-top:4px;
+  letter-spacing:.2px;
+}
+.tier-count{
+  font-family:'Orbitron',sans-serif;
+  font-size:12px;
+  font-weight:800;
+  padding:7px 14px;
+  border-radius:10px;
+  color:var(--tier);
+  background:color-mix(in srgb, var(--tier) 12%, transparent);
+  border:1px solid color-mix(in srgb, var(--tier) 38%, transparent);
+  letter-spacing:1.5px;
+  position:relative;
+  z-index:1;
+  white-space:nowrap;
+}
+
+/* ─── Plan grid ─── */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+}
+
+.plan{
+  position:relative;
+  border-radius:22px;
+  padding:24px 22px 22px;
+  background:linear-gradient(165deg, rgba(255,255,255,.065), rgba(255,255,255,.015));
+  border:1px solid var(--line);
+  backdrop-filter:blur(14px);
+  overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.8,.3,1), border-color .35s, box-shadow .35s;
+}
+.plan::before{
+  content:'';
+  position:absolute;
+  top:-70px; right:-70px;
+  width:180px;height:180px;
+  border-radius:50%;
+  background:radial-gradient(circle, var(--c1), transparent 68%);
+  opacity:.30;
+  filter:blur(14px);
+  transition:opacity .4s, transform .5s;
+}
+.plan:hover{
+  transform:translateY(-7px);
+  border-color:color-mix(in srgb, var(--c1) 55%, transparent);
+  box-shadow:0 26px 55px -24px var(--c1);
+}
+.plan:hover::before{opacity:.6;transform:scale(1.18)}
+
+.plan.popular{
+  border-color:rgba(255,106,0,.55);
+  box-shadow:0 0 0 1px rgba(255,106,0,.18), 0 24px 60px -30px rgba(255,106,0,.9);
+}
+
+.ribbon{
+  position:absolute;
+  top:16px; right:-38px;
+  transform:rotate(38deg);
+  background:linear-gradient(90deg,#ff8a00,#ff3d00);
+  color:#fff;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.4px;
+  padding:6px 44px;
+  box-shadow:0 8px 20px -8px rgba(255,61,0,.9);
+}
+
+.plan-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:18px;
+}
+
+.days{
+  font-family:'Orbitron',sans-serif;
+  font-size:26px;
+  font-weight:900;
+  line-height:1;
+  color:#fff;
+  display:flex;
+  align-items:baseline;
+  gap:6px;
+}
+.days small{
+  font-family:'Outfit',sans-serif;
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:2px;
+  color:var(--muted);
+  text-transform:uppercase;
+}
+
+.chip{
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  padding:6px 11px;
+  border-radius:8px;
+  color:var(--c1);
+  background:color-mix(in srgb, var(--c1) 14%, transparent);
+  border:1px solid color-mix(in srgb, var(--c1) 38%, transparent);
+}
+
+.likes{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:13.5px;
+  font-weight:600;
+  color:#d6d6e2;
+  padding:11px 13px;
+  border-radius:12px;
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.055);
+  margin-bottom:18px;
+}
+.likes .heart{
+  font-size:15px;
+  animation:beat 1.5s ease-in-out infinite;
+}
+@keyframes beat{
+  0%,100%{transform:scale(1)}
+  25%{transform:scale(1.22)}
+  40%{transform:scale(1)}
+  55%{transform:scale(1.14)}
+}
+
+.price-row{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  margin-bottom:18px;
+}
+.price{
+  font-family:'Orbitron',sans-serif;
+  font-size:36px;
+  font-weight:900;
+  line-height:1;
+  background:linear-gradient(120deg,#ffffff,var(--c1));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.price small{
+  font-family:'Outfit',sans-serif;
+  font-size:12px;
+  font-weight:600;
+  color:var(--muted);
+  letter-spacing:.4px;
+}
+.per{
+  font-size:11.5px;
+  color:var(--muted);
+  font-weight:600;
+  text-align:right;
+  line-height:1.5;
+}
+
+.btn{
+  width:100%;
+  padding:14px 16px;
+  border:none;
+  border-radius:14px;
+  font-family:'Outfit',sans-serif;
+  font-size:14.5px;
+  font-weight:800;
+  letter-spacing:.4px;
+  color:#fff;
+  cursor:pointer;
+  background:linear-gradient(135deg, var(--c1), var(--c2));
+  box-shadow:0 14px 30px -14px var(--c1);
+  transition:transform .25s, filter .25s, box-shadow .25s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+}
+.btn:hover{
+  filter:brightness(1.13);
+  transform:translateY(-2px);
+  box-shadow:0 20px 38px -14px var(--c1);
+}
+.btn:active{transform:translateY(0) scale(.975)}
+
+/* ─── Steps ─── */
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:14px;
+  margin-top:8px;
+}
+.step{
+  padding:20px 18px;
+  border-radius:18px;
+  background:rgba(255,255,255,.032);
+  border:1px solid var(--line);
+  transition:.3s;
+}
+.step:hover{
+  background:rgba(255,106,0,.06);
+  border-color:rgba(255,106,0,.35);
+  transform:translateY(-3px);
+}
+.step .num{
+  width:30px;height:30px;
+  display:grid;place-items:center;
+  border-radius:9px;
+  font-family:'Orbitron',sans-serif;
+  font-size:13px;
+  font-weight:900;
+  color:#fff;
+  background:linear-gradient(135deg,#ff8a00,#ff3d00);
+  box-shadow:0 8px 20px -8px rgba(255,61,0,.95);
+  margin-bottom:13px;
+}
+.step h4{font-size:14.5px;font-weight:700;margin-bottom:6px}
+.step p{font-size:12.8px;color:var(--muted);line-height:1.6}
+
+/* ─── Footer ─── */
+footer{
+  margin-top:56px;
+  padding:30px 0 10px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.owner-link{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:13px 26px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:700;
+  color:#fff;
+  text-decoration:none;
+  background:linear-gradient(135deg,#229ED9,#0b7cbb);
+  box-shadow:0 16px 38px -16px #229ED9;
+  transition:.3s;
+}
+.owner-link:hover{transform:translateY(-3px);filter:brightness(1.12)}
+.copy{
+  margin-top:18px;
+  font-size:12.4px;
+  color:rgba(255,255,255,.34);
+  line-height:1.7;
+}
+
+/* ─── Floating chat ─── */
+.float-chat{
+  position:fixed;
+  right:16px;
+  bottom:16px;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:14px 20px;
+  border-radius:999px;
+  font-size:13.5px;
+  font-weight:800;
+  color:#fff;
+  text-decoration:none;
+  background:linear-gradient(135deg,#229ED9,#0b7cbb);
+  box-shadow:0 16px 40px -14px #229ED9, 0 0 0 1px rgba(255,255,255,.12) inset;
+  animation:bob 3s ease-in-out infinite;
+}
+.float-chat:hover{filter:brightness(1.12)}
+@keyframes bob{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-5px)}
+}
+
+/* ─── Toast ─── */
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:88px;
+  transform:translate(-50%,26px);
+  padding:13px 22px;
+  border-radius:14px;
+  font-size:13.5px;
+  font-weight:600;
+  color:#fff;
+  background:rgba(22,22,30,.96);
+  border:1px solid rgba(255,106,0,.45);
+  box-shadow:0 20px 50px -18px #000;
+  backdrop-filter:blur(14px);
+  opacity:0;
+  pointer-events:none;
+  transition:.38s cubic-bezier(.2,.8,.3,1);
+  z-index:99;
+  white-space:nowrap;
+  max-width:92vw;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ─── Reveal ─── */
+.reveal{
+  opacity:0;
+  transform:translateY(26px);
+  transition:opacity .7s ease, transform .7s cubic-bezier(.2,.8,.3,1);
+}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:480px){
+  header{padding-top:38px}
+  .plan{padding:21px 18px}
+  .price{font-size:31px}
+  .days{font-size:23px}
+  .float-chat{padding:12px 17px;font-size:12.6px}
+  .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .tier-head{padding:14px 16px;gap:12px}
+  .tier-icon{width:46px;height:46px;font-size:22px}
+  .tier-name{font-size:16px}
+  .tier-count{font-size:10.5px;padding:6px 10px}
+  .tier-desc{font-size:11.5px}
+  .tier-nav a{font-size:11.5px;padding:8px 12px}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ══════ HERO ══════ -->
+  <header>
+    <div class="badge"><span class="dot"></span> Fʀᴇᴇ Fɪʀᴇ Aᴜᴛᴏ Lɪᴋᴇs Aᴠᴀɪʟᴀʙʟᴇ</div>
+    <h1>Fʀᴇᴇ Fɪʀᴇ<br>Aᴜᴛᴏ Lɪᴋᴇs</h1>
+    <p class="sub">6 Tɪᴇʀs · 23 Pʟᴀɴs · 150–220 Lɪᴋᴇs Dᴀɪʟʏ</p>
+
+    <div class="features">
+      <div class="feat"><span>❤️</span> 150–220 Lɪᴋᴇs Dᴀɪʟʏ</div>
+      <div class="feat"><span>⚡</span> ꜰᴀsᴛ &amp; Sᴍᴏᴏᴛʜ Sᴇʀᴠɪᴄᴇ</div>
+      <div class="feat"><span>🎯</span> Fʀᴇᴇ Fɪʀᴇ Pʀᴏꜰɪʟᴇ Lɪᴋᴇs</div>
+      <div class="feat"><span>🔒</span> Nᴏ Lᴏɢɪɴ RᴇQᴜɪʀᴇᴅ</div>
+    </div>
+  </header>
+
+  <div class="divider">✦ ─── ✦</div>
+
+  <!-- ══════ PRICE LIST ══════ -->
+  <h2 class="section-title reveal">💰 Pʀɪᴄᴇ <em>Lɪsᴛ</em></h2>
+  <p class="section-note reveal">Cʜᴏᴏsᴇ ʏᴏᴜʀ ᴛɪᴇʀ &amp; ᴛᴀᴘ <strong>Bᴜʏ Nᴏᴡ</strong></p>
+
+  <!-- Quick tier nav -->
+  <nav class="tier-nav reveal" id="tierNav"></nav>
+
+  <div id="tiersWrap"></div>
+
+  <div class="divider">✦ ─── ✦</div>
+
+  <!-- ══════ HOW IT WORKS ══════ -->
+  <h2 class="section-title reveal">🚀 Hᴏᴡ Iᴛ <em>Wᴏʀᴋs</em></h2>
+  <p class="section-note reveal">Gᴇᴛ sᴛᴀʀᴛᴇᴅ ɪɴ ᴜɴᴅᴇʀ ᴀ ᴍɪɴᴜᴛᴇ</p>
+
+  <div class="steps">
+    <div class="step reveal">
+      <div class="num">1</div>
+      <h4>Sᴇʟᴇᴄᴛ ᴀ Pʟᴀɴ</h4>
+      <p>Tᴀᴘ ᴛʜᴇ “Bᴜʏ Nᴏᴡ” ʙᴜᴛᴛᴏɴ ᴏɴ ᴀɴʏ ᴅᴜʀᴀᴛɪᴏɴ ʏᴏᴜ ʟɪᴋᴇ.</p>
+    </div>
+    <div class="step reveal">
+      <div class="num">2</div>
+      <h4>Tᴇʟᴇɢʀᴀᴍ Oᴘᴇɴs</h4>
+      <p>Yᴏᴜʀ ᴏʀᴅᴇʀ ᴅᴇᴛᴀɪʟs ᴀʀᴇ ᴀᴜᴛᴏ-ꜰɪʟʟᴇᴅ ɪɴ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ ᴛʜᴇ ᴏᴡɴᴇʀ.</p>
+    </div>
+    <div class="step reveal">
+      <div class="num">3</div>
+      <h4>Pᴀʏ &amp; Eɴᴊᴏʏ</h4>
+      <p>Cᴏᴍᴘʟᴇᴛᴇ ᴛʜᴇ ᴘᴀʏᴍᴇɴᴛ ᴀɴᴅ ʏᴏᴜʀ ʟɪᴋᴇs sᴛᴀʀᴛ ʀᴏʟʟɪɴɢ ɪɴ ᴅᴀɪʟʏ.</p>
+    </div>
+  </div>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer>
+    <a class="owner-link" href="https://t.me/DG_DRIFT" target="_blank" rel="noopener">
+      💌 Dᴍ Fᴏʀ Bᴜʏ — @DG_DRIFT
+    </a>
+    <p class="copy">
+      © <span id="yr"></span> Dɢ Sᴛᴏʀᴇ · Aʟʟ Rɪɢʜᴛs Rᴇsᴇʀᴠᴇᴅ<br>
+      Nᴏᴛ ᴀꜰꜰɪʟɪᴀᴛᴇᴅ ᴡɪᴛʜ Gᴀʀᴇɴᴀ Fʀᴇᴇ Fɪʀᴇ.
+    </p>
+  </footer>
+
+</div>
+
+<!-- Floating chat -->
+<a class="float-chat" href="https://t.me/DG_DRIFT" target="_blank" rel="noopener">
+  💬 Cʜᴀᴛ Oᴡɴᴇʀ
+</a>
+
+<!-- Toast -->
+<div class="toast" id="toast">Oᴘᴇɴɪɴɢ Tᴇʟᴇɢʀᴀᴍ…</div>
+
+<script>
+/* ══════════════════════════════════════════
+   SMALL CAPS CONVERTER
+   ══════════════════════════════════════════ */
+function toSmallCaps(str) {
+  const map = {
+    'A':'ᴀ','B':'ʙ','C':'ᴄ','D':'ᴅ','E':'ᴇ','F':'ꜰ','G':'ɢ','H':'ʜ','I':'ɪ','J':'ᴊ','K':'ᴋ','L':'ʟ','M':'ᴍ','N':'ɴ','O':'ᴏ','P':'ᴘ','Q':'ǫ','R':'ʀ','S':'ꜱ','T':'ᴛ','U':'ᴜ','V':'ᴠ','W':'ᴡ','X':'x','Y':'ʏ','Z':'ᴢ',
+    'a':'ᴀ','b':'ʙ','c':'ᴄ','d':'ᴅ','e':'ᴇ','f':'ꜰ','g':'ɢ','h':'ʜ','i':'ɪ','j':'ᴊ','k':'ᴋ','l':'ʟ','m':'ᴍ','n':'ɴ','o':'ᴏ','p':'ᴘ','q':'ǫ','r':'ʀ','s':'ꜱ','t':'ᴛ','u':'ᴜ','v':'ᴠ','w':'ᴡ','x':'x','y':'ʏ','z':'ᴢ'
+  };
+  return str.replace(/[a-zA-Z]/g, ch => map[ch] || ch);
+}
+
+/* ══════════════════════════════════════════
+   CONFIG
+   ══════════════════════════════════════════ */
+const OWNER_USERNAME = "DG_DRIFT";
+
+/* ══════════════════════════════════════════
+   6 TIERS — 23 PLANS
+   ══════════════════════════════════════════ */
+const TIERS = [
+  {
+    id: "bronze",
+    icon: "🥉",
+    name: "Bʀᴏɴᴢᴇ",
+    desc: "Eɴᴛʀʏ ʟᴇᴠᴇʟ · Bᴜᴅɢᴇᴛ ꜰʀɪᴇɴᴅʟʏ",
+    color: "#cd7f32",
+    plans: [
+      { days: 1, price: 15, tag: "Trial",   c1: "#a17a58", c2: "#7a4f2a" },
+      { days: 2, price: 20, tag: "Mini",    c1: "#b98b5e", c2: "#8a5a2e" },
+      { days: 3, price: 25, tag: "Quick",   c1: "#cd7f32", c2: "#9a5a1e" },
+      { days: 5, price: 35, tag: "Value",   c1: "#d99a5a", c2: "#a56a2a" },
+      { days: 7, price: 40, tag: "Starter", c1: "#e6a866", c2: "#b67430" }
+    ]
+  },
+  {
+    id: "silver",
+    icon: "🥈",
+    name: "Sɪʟᴠᴇʀ",
+    desc: "Mᴏsᴛ ᴘᴏᴘᴜʟᴀʀ · Bᴀʟᴀɴᴄᴇᴅ ᴠᴀʟᴜᴇ",
+    color: "#c0c0c0",
+    plans: [
+      { days: 10, price: 60,  tag: "Best",     c1: "#a8b0bc", c2: "#6c7480" },
+      { days: 15, price: 75,  tag: "Popular",  c1: "#b8c0cc", c2: "#7a8492" },
+      { days: 20, price: 100, tag: "Hot",      c1: "#c8d0dc", c2: "#8a94a4" },
+      { days: 30, price: 130, tag: "Top Pick", c1: "#d8e0ec", c2: "#96a4b8", popular: true }
+    ]
+  },
+  {
+    id: "gold",
+    icon: "🥇",
+    name: "Gᴏʟᴅ",
+    desc: "Pʀᴇᴍɪᴜᴍ ᴛɪᴇʀ · Gʀᴇᴀᴛ ᴠᴀʟᴜᴇ",
+    color: "#ffd700",
+    plans: [
+      { days: 45, price: 190, tag: "Pro",   c1: "#ffcc33", c2: "#d4a017" },
+      { days: 60, price: 240, tag: "Elite", c1: "#ffd700", c2: "#c9a200" },
+      { days: 75, price: 290, tag: "Mega",  c1: "#ffdd44", c2: "#d4aa00" },
+      { days: 90, price: 350, tag: "Royal", c1: "#ffe055", c2: "#d8b000" }
+    ]
+  },
+  {
+    id: "platinum",
+    icon: "💠",
+    name: "Pʟᴀᴛɪɴᴜᴍ",
+    desc: "Hɪɢʜ ᴛɪᴇʀ · Sᴛᴇᴇʟ ᴄʟᴀss",
+    color: "#a5c9d6",
+    plans: [
+      { days: 120, price: 450, tag: "Titan",    c1: "#9bb8d3", c2: "#5a7a99" },
+      { days: 150, price: 550, tag: "Prime",    c1: "#aac4dc", c2: "#6a8aad" },
+      { days: 180, price: 650, tag: "King",     c1: "#b8d0e6", c2: "#7a9ac1" },
+      { days: 240, price: 850, tag: "Emperor",  c1: "#c6dcef", c2: "#8aaad5" }
+    ]
+  },
+  {
+    id: "diamond",
+    icon: "💎",
+    name: "Dɪᴀᴍᴏɴᴅ",
+    desc: "Eʟɪᴛᴇ · Iᴄᴇ ᴄʀʏsᴛᴀʟ ᴛɪᴇʀ",
+    color: "#67e8f9",
+    plans: [
+      { days: 300, price: 1000, tag: "Dynasty", c1: "#67e8f9", c2: "#0891b2" },
+      { days: 365, price: 1200, tag: "Legend",  c1: "#a5f3fc", c2: "#06b6d4" },
+      { days: 450, price: 1450, tag: "Mythic",  c1: "#cffafe", c2: "#22d3ee" }
+    ]
+  },
+  {
+    id: "master",
+    icon: "👑",
+    name: "Mᴀsᴛᴇʀ",
+    desc: "Tᴏᴘ ᴛɪᴇʀ · Rᴏʏᴀʟ ᴄʀᴏᴡɴ ᴄʟᴀss",
+    color: "#c084fc",
+    plans: [
+      { days: 500,  price: 1600, tag: "Grand",   c1: "#c084fc", c2: "#7c3aed" },
+      { days: 730,  price: 2200, tag: "Supreme", c1: "#d8b4fe", c2: "#9333ea" },
+      { days: 1000, price: 2900, tag: "God",     c1: "#e9d5ff", c2: "#a855f7" }
+    ]
+  }
+];
+
+/* ══════════════════════════════════════════
+   RENDER TIER NAV
+   ══════════════════════════════════════════ */
+const tierNav = document.getElementById("tierNav");
+tierNav.innerHTML = TIERS.map(t => `
+  <a href="#tier-${t.id}" style="--tc:${t.color}">
+    <span>${t.icon}</span> ${t.name}
+  </a>
+`).join("");
+
+/* ══════════════════════════════════════════
+   RENDER TIERS + CARDS
+   ══════════════════════════════════════════ */
+const tiersWrap = document.getElementById("tiersWrap");
+
+tiersWrap.innerHTML = TIERS.map(tier => `
+  <section class="tier" id="tier-${tier.id}" style="--tier:${tier.color}">
+    <div class="tier-head reveal">
+      <div class="tier-icon">${tier.icon}</div>
+      <div class="tier-info">
+        <div class="tier-name">${tier.name}</div>
+        <div class="tier-desc">${tier.desc}</div>
+      </div>
+      <div class="tier-count">${tier.plans.length} ${toSmallCaps(tier.plans.length === 1 ? 'Plan' : 'Plans')}</div>
+    </div>
+
+    <div class="grid">
+      ${tier.plans.map(plan => `
+        <article class="plan reveal ${plan.popular ? 'popular' : ''}"
+                 style="--c1:${plan.c1}; --c2:${plan.c2}">
+          ${plan.popular ? '<div class="ribbon">' + toSmallCaps('BEST SELLER') + '</div>' : ''}
+
+          <div class="plan-head">
+            <div class="days">${plan.days} <small>${toSmallCaps(plan.days === 1 ? 'Day' : 'Days')}</small></div>
+            <div class="chip">${toSmallCaps(plan.tag)}</div>
+          </div>
+
+          <div class="likes">
+            <span class="heart">❤️</span> 150–220 ${toSmallCaps('Likes')} / ${toSmallCaps('Day')}
+          </div>
+
+          <div class="price-row">
+            <div class="price">₹${plan.price} <small>${toSmallCaps('INR')}</small></div>
+            <div class="per">≈ ₹${(plan.price / plan.days).toFixed(1)}<br>${toSmallCaps('per day')}</div>
+          </div>
+
+          <button class="btn"
+                  data-days="${plan.days}"
+                  data-price="${plan.price}">
+            🛒 ${toSmallCaps('Buy Now')}
+          </button>
+        </article>
+      `).join("")}
+    </div>
+  </section>
+`).join("");
+
+/* ══════════════════════════════════════════
+   EXACT ORDER MESSAGE
+   ══════════════════════════════════════════ */
+function buildMessage(plan) {
+  return `🔥 Dɢ Dʀɪғᴛ Aᴜᴛᴏ Lɪᴋᴇs Sᴛᴏʀᴇ
+━━━━━━━━━━━━━━━━━━
+💎 Pʟᴀɴ     : ${plan.days} Dᴀʏs
+❤️ Lɪᴋᴇs    : 150–220 / Dᴀʏ
+💰 Pʀɪᴄᴇ    : ₹${plan.price}
+━━━━━━━━━━━━━━━━━━
+🙏 Pʟᴇᴀsᴇ Cᴏᴍᴇ Oɴʟɪɴᴇ & Rᴇᴘʟʏ Mᴇ. ❤️
+━━━━━━━━━━━━━━━━━━`;
+}
+
+function showToast(text) {
+  const t = document.getElementById("toast");
+  t.textContent = text;
+  t.classList.add("show");
+  clearTimeout(showToast._timer);
+  showToast._timer = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+function orderPlan(plan) {
+  const msg = buildMessage(plan);
+  const url = `https://t.me/${OWNER_USERNAME}?text=${encodeURIComponent(msg)}`;
+
+  showToast("💬 Oᴘᴇɴɪɴɢ Tᴇʟᴇɢʀᴀᴍ ᴄʜᴀᴛ…");
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(msg).catch(() => {});
+  }
+
+  setTimeout(() => {
+    const win = window.open(url, "_blank");
+    if (!win) window.location.href = url;
+  }, 420);
+}
+
+tiersWrap.addEventListener("click", (e) => {
+  const btn = e.target.closest(".btn");
+  if (!btn) return;
+  orderPlan({
+    days: Number(btn.dataset.days),
+    price: Number(btn.dataset.price)
+  });
+});
+
+/* ══════════════════════════════════════════
+   SCROLL REVEAL
+   ══════════════════════════════════════════ */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add("in"), i * 45);
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+/* Year */
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
